@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>   
+    <main>
+        <section class="password">
+            <p id="nextPassword">Senha: 00</p>
+        </section>
+        <form>
+            <button type = 'button'id="newPatient">Novo paciente</button>
+            <input type="text" placeholder="Digite o nome do paciente" id="inputName">
+            <button type = 'button'id="addPatientBtn">Adicionar</button>
+
+            <button type = 'button'id="consultPatient">Próximo paciente</button>
+
+            <button type = 'button'id="list">Visualizar lista de espera</button>
+            <button type= 'button'id="resetPassword">Reiniciar senhas</button>
+        </form>
+        <ul class="waitingList"></ul>
+    </main>
+    <audio src="./audio/Beeper Emergency Call.mp3" id="audio"></audio>
+    <script src="./script/js.js"></script>
+</body>
+</html>

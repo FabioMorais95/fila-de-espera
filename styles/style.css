@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.password{
+    margin-top: 1rem;
+    background-color: #000;
+    font-size: 2rem;
+    color: #E74C3C;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+}
+#inputName, #addPatientBtn{
+    display: none;
+}
+
+.waitingList{
+    display: none;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2C3E50;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF0F1;
+    width: 50%;
+    height: 50%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
+}
+form button{
+    width: 50%;
+    padding: .5rem;
+    margin-top: 1rem;
+    background-color: #2C3E50;
+    border: 2px solid transparent;
+    border-radius: .5rem;
+    color: #ECF0F1;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+}
+form button:hover{
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    border: 2px solid #2C3E50;
+    transition: .3s;
+
+}
+form > #addPatientBtn{
+    width: 30%;
+    text-align: center;
+}
+#addPatientBtn{
+    background-color: #E74C3C;
+}
+#addPatientBtn:hover{
+    color: #2C3E50;
+    border: 2px solid transparent;
+}
+input{
+    padding: .5rem;
+    margin-top: 1rem;
+    width: 30%;
+    height: 12%;
+    border: 2px solid black;
+    border-radius: .3rem;
+    text-align: center;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    outline: none;
+}
+span{
+    color: #E74C3C;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+ul{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e2a36;
+    width: 50vw;
+    border-radius: .5rem;
+    color: #ECF0F1;
+}
+li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0rem .5rem;
+}
+button{
+    font-size: 1.3rem;
+}
