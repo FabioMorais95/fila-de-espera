@@ -17,7 +17,7 @@ let time = new Date()
 let hour = time.getHours()
 let minutes = time.getMinutes()
 if (hour < 10) {
-    hour = `0:${hour}`
+    hour = `0${hour}`
 } else if (minutes < 10) {
     minutes = `0${minutes}`
 }
@@ -47,9 +47,7 @@ function consultPatient() {
     nextPatient()
 
     document.querySelector('.waitingList').firstChild.remove()
-    if (patients.length == 0) {
-        alert('Todos os pacientes foram atendidos!')
-    }
+
     console.log(patients)
 }
 
@@ -81,7 +79,7 @@ function showListPatient() {
     }
 }
 
-
+cpmspçe
 function newPatientAddedMessage() {
     const form = document.querySelector('form')
     const span = document.createElement('span')
@@ -93,10 +91,11 @@ function newPatientAddedMessage() {
 }
 
 function nextPatient() {
-    if (patients.length < 0) {
+    if (patients.length == -1) {
         alert('Sem pacientes na lista')
         return
-    } else {
+    }
+    else {
 
         const nextPatient = document.querySelector('#nextPassword')
         password++
@@ -119,3 +118,5 @@ function resetPass() {
     }
     
 }
+const result = 5
+console.log(result)
